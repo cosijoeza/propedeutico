@@ -1,4 +1,4 @@
-#
+# LIKERT SCALE - GRAFICO DE BARRAS
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -25,15 +25,8 @@ df = pd.DataFrame(satisfaction_data, columns=["Satisfaccion"])
 # Create frecuency tables.
 frecuency_table = df["Satisfaccion"].value_counts().sort_index()
 
-print(frecuency_table)
-
-# Graphics configuration.
-sns.set_theme(style="whitegrid")
-
-print("Index: ",frecuency_table.index)
-print("Values: ",frecuency_table.values)
-
-# Create bar graph.
+# Graphics configuration and create bar graph.
+sns.set_theme(style="darkgrid")
 plt.figure(figsize=(10,6))
 sns.barplot(x = frecuency_table.index,y=frecuency_table.values,palette='Blues_d')
 plt.title('Frecuencia de satisfaccion de servicios de biblioteca')

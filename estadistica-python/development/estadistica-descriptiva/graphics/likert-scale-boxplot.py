@@ -1,4 +1,7 @@
-# LIKERT SCALE
+# Queremos analizar la dispersión de las respuestas para
+# entender variaciones en la percepción del clima escolar.
+# Generaremos datos simulados y utilizaremos METODOS NO PARAMÉTRICOS.
+# LIKERT SCALE - CAJA CON BIGOTES
 import numpy as np
 import pandas as pd
 import seaborn as sns
