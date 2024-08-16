@@ -1,6 +1,26 @@
 {
-    "user": {
+    "user00": {
         "nombre": "cosi",
+        "matricula": "2024370051"
+    },
+    "user01": {
+        "nombre": "angel",
+        "matricula": "2024370052"
+    },
+    "user02": {
+        "nombre": "gabo",
+        "matricula": "2024370053"
+    },
+    "user03": {
+        "nombre": "andres",
+        "matricula": "2024370054"
+    },
+    "user04": {
+        "nombre": "ivan",
+        "matricula": "2024370055"
+    },
+    "user05": {
+        "nombre": "procopio",
         "matricula": "2024370056"
     }
 }
