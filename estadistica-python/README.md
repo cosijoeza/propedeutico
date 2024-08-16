@@ -20,4 +20,6 @@
 - 1.3 Representación gráfica con python
    -
 
-  - Escala de Likert
+  - Boxplot
+  - Gráfica de Barras
+  - Histograma / Poligono de Frecuencias
