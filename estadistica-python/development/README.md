@@ -15,7 +15,10 @@ Activar entorno de trabajo
 ```bash
 $ source development/bin/activate
 ```
-
+Ir a la carpeta de desarrollo
+```bash
+$ cd development
+```
 Desactivar entorno de trabajo
 ```bash
 $ deactivate
