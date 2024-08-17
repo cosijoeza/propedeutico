@@ -79,11 +79,11 @@ n = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 print(n)
 res = n.index(9)
 print("n[9] = ", res)
-res = n.index(6, 2, 8) # Interval[2,8]
+res = n.index(6, 2, 8) # Search 6; Interval[2,8]
 print(res)
-res = n.index(8, 2, 8) # Interval[2,8]
+res = n.index(8, 2, 8) # Search 8; Interval[2,8]
 print(res)
-# res = n.index(8, 2, 5)
+# res = n.index(8, 2, 5) # Interval[2,5] FAIL!!
 # print(res)
 
 # 'count' method.
@@ -103,7 +103,7 @@ n.sort()
 print(n, "\n")
 
 # n = [1,"hola",-3,[3,2,1]]
-# n.sort()      FAILS!!!
+# n.sort()      FAIL!!!
 # print(n)
 
 # 'sorted' method.
@@ -125,7 +125,7 @@ print(n)
 # 'copy' method.
 print("\n========= 'copy' function =========")
 n1 = [1, 2, 3, 4, 5, 1, 5, 7, 9, 5]
-n2 = n1
+n2 = n1 # copy direction memory.
 n3 = n1.copy()
 print("n1 = ", n1)
 print("n2 = ", n2)
