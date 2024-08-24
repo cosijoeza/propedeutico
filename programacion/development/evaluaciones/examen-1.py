@@ -43,6 +43,7 @@ print(value_2, "\t:", type(value_2))
 # 6
 print("\n====================== 6.-Numero bisiesto ======================")
 number = datos["fecha_nacimiento"]["anyo"]
+number = 2024
 x = number % 4 == 0
 y = number % 100 == 0
 z = number % 400 == 0
