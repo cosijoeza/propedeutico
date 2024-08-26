@@ -23,3 +23,5 @@
   - Boxplot
   - Gráfica de Barras
   - Histograma / Poligono de Frecuencias
+  - Frecuencia acomulada
+  - Covarianza y Correlación
