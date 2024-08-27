@@ -25,3 +25,12 @@
   - Histograma / Poligono de Frecuencias
   - Frecuencia acomulada
   - Covarianza y Correlación
+
+## 2.- Modelos y estimación.
+
+- 2.1 Teorema del límite central
+   -
+
+  - Distribución Normal
+
+
