@@ -66,10 +66,10 @@
 
 datos = [
     dict(
-        Nombre="Pedo Picapieda",
+        Nombre="Pedro Picapieda",
         Fecha=dict(dia=13, mes=9, anyo=1977),
         Peso=65.349,
-        Sueldo=13020.34,
+        Sueldo=13020.34986898,
     ),
     dict(
         Nombre="Luis Marmol",
@@ -95,4 +95,40 @@ linea = "-" * 50
 
 print(linea)
 print("|{0:20}|{1:6}|{2:9}|{3:10}|".format(campos[0], campos[1], campos[2], campos[3]))
+print(linea)
+print(
+    "|{0:20}|{1:6}|{2:9.2f}|{3:10.3f}|".format(
+        datos[0]["Nombre"],
+        2024 - datos[0]["Fecha"]["anyo"],
+        datos[0]["Peso"],
+        datos[0]["Sueldo"],
+    )
+)
+print(linea)
+print(
+    "|{0:20}|{1:6}|{2:9.2f}|{3:10.3f}|".format(
+        datos[1]["Nombre"],
+        2024 - datos[1]["Fecha"]["anyo"],
+        datos[1]["Peso"],
+        datos[1]["Sueldo"],
+    )
+)
+print(linea)
+print(
+    "|{0:20}|{1:6}|{2:9.2f}|{3:10.3f}|".format(
+        datos[2]["Nombre"],
+        2024 - datos[2]["Fecha"]["anyo"],
+        datos[2]["Peso"],
+        datos[2]["Sueldo"],
+    )
+)
+print(linea)
+print(
+    "|{0:20}|{1:6}|{2:9.2f}|{3:10.3f}|".format(
+        datos[3]["Nombre"],
+        2024 - datos[3]["Fecha"]["anyo"],
+        datos[3]["Peso"],
+        datos[3]["Sueldo"],
+    )
+)
 print(linea)
