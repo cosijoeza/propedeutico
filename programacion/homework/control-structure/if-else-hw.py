@@ -39,19 +39,30 @@
 
 # (3) Dada la fecha de nacimiento de una persona, calcular su edad.
 day = 29
-month = 2
-year = 2020
+month = 7
+year = 1992
 currentDay = 28
 currentMonth = 8
 currentYear = 2024
-print("\nAnio:{} Mes:{} Dia:{}".format(year,month,day))
+print("\nAnio:{} Mes:{} Dia:{}".format(year, month, day))
 if year <= 2024:
     if month >= 1 and month <= 12:
         if day >= 1 and day <= 31:
+            # Calculate days.
             days = (currentDay + (31 - day)) % 31
-            months = (currentMonth + (12 - month)) % 12
-            if (month <= currentMonth) and (day <= currentDay):
+            # Calculate months.
+            if day > currentDay:
+                months = (currentMonth + (12 - month - 1)) % 12
+            else:
+                months = (currentMonth + (12 - month)) % 12
+            # Calculate years.
+            if month < currentMonth:
                 years = currentYear - year
+            elif month == currentMonth:
+                if currentDay >= day:
+                    years = currentYear - year
+                else:
+                    years = currentYear - year - 1
             else:
                 years = currentYear - year - 1
             print("Tienes {} anios,{} meses,{} dias".format(years, months, days))
