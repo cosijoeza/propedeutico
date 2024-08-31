@@ -1,68 +1,68 @@
-# var = input()
-# edad = input("Ingrese Edad:")
-# print("Tu edad es:", edad)
+var = input()
+edad = input("Ingrese Edad:")
+print("Tu edad es:", edad)
 
-# # ============== READ ==============
-# var = input()
-# print(type(var))
-# var = input()
-# print(type(var))
-# var = input()
-# print(type(var))
-# var = input()
-# print(type(var))
+# ============== READ ==============
+var = input()
+print(type(var))
+var = input()
+print(type(var))
+var = input()
+print(type(var))
+var = input()
+print(type(var))
 
-# # ============== TYPE ==============
-# nombre = input("Escribe tu nombre:")
-# print(type(nombre), nombre)
-# edad = input("Escribe tu edad:")
-# print(type(edad), edad)
-# peso = input("Escribe tu peso:")
-# print(type(peso), peso)
+# ============== TYPE ==============
+nombre = input("Escribe tu nombre:")
+print(type(nombre), nombre)
+edad = input("Escribe tu edad:")
+print(type(edad), edad)
+peso = input("Escribe tu peso:")
+print(type(peso), peso)
 
 
-# # ============== CAST ==============
-# nombre = input("Nombre:")
-# print(type(nombre), nombre)
+# ============== CAST ==============
+nombre = input("Nombre:")
+print(type(nombre), nombre)
 
-# edad = int(input("Edad:"))
-# print(type(edad), edad)
+edad = int(input("Edad:"))
+print(type(edad), edad)
 
-# peso = float(input("Peso:"))
-# print(type(peso), peso)
+peso = float(input("Peso:"))
+print(type(peso), peso)
 
 # ============== PRINTF ==============
-# n = 4
-# print("Hola mundo")
-# print("El valor de n es:", n)
+n = 4
+print("Hola mundo")
+print("El valor de n es:", n)
 
-# nombre = "Juan Perez"
-# edad = 25
-# estatura = 1.79
+nombre = "Juan Perez"
+edad = 25
+estatura = 1.79
 
-# print("Nombre:", nombre, "Edad:", edad, "Estatura:", estatura)
-# print("Nombre:", nombre, "\nEdad:", edad, "\nEstatura:", estatura)
-# print("Nombre:\"", nombre, "\"\nEdad:\"", edad, "\"\nEstatura:\"", estatura,"\"")
+print("Nombre:", nombre, "Edad:", edad, "Estatura:", estatura)
+print("Nombre:", nombre, "\nEdad:", edad, "\nEstatura:", estatura)
+print("Nombre:\"", nombre, "\"\nEdad:\"", edad, "\"\nEstatura:\"", estatura,"\"")
 
-# # ============== SEVERAL MESSAGES, DELETE NEXT LINE ==============
-# print("Hola mundo!!!")
-# print("Hola mundillo!!!")
+# ============== SEVERAL MESSAGES, DELETE NEXT LINE ==============
+print("Hola mundo!!!")
+print("Hola mundillo!!!")
 
-# print("Otro mensaje", end=" ")
-# print("De nuevo")
+print("Otro mensaje", end=" ")
+print("De nuevo")
 
-# print("Hola", end=" ")
-# print("Hola")
+print("Hola", end=" ")
+print("Hola")
 
-# print("Hola", end=":")
-# print("Hola")
+print("Hola", end=":")
+print("Hola")
 
-# # ============== STRING FORMATT ==============
-# base = 3.1415
-# altura = 11.7341
-# area = (base * altura) / 2
-# print("Base {:.2f}, Altura {:.2f}, Area {:.3f}".format(base, altura, area))
-# print("Calculo: {2:.2f} es ({0:.2f} * {1:.2f})/2".format(base, altura, area))
+# ============== STRING FORMATT ==============
+base = 3.1415
+altura = 11.7341
+area = (base * altura) / 2
+print("Base {:.2f}, Altura {:.2f}, Area {:.3f}".format(base, altura, area))
+print("Calculo: {2:.2f} es ({0:.2f} * {1:.2f})/2".format(base, altura, area))
 
 datos = [
     dict(
