@@ -67,19 +67,49 @@ import random
 # print("\n")
 
 # (4)
-rows = 5
-cols = 20
-if rows > 0 and cols > 0:
-    for i in range(rows):
-        if i == 0 or i == (rows - 1):
-            for j in range(cols):
-                print("*", end="")
-        else:
-            for j in range(cols):
-                if j == 0 or j == (cols - 1):
-                    print("*", end="")
-                else:
-                    print(" ", end="")
-        print("")
-else:
-    print("Informacion invalida")
+# rows = 5
+# cols = 20
+# if rows > 0 and cols > 0:
+#     for i in range(rows):
+#         if i == 0 or i == (rows - 1):
+#             for j in range(cols):
+#                 print("*", end="")
+#         else:
+#             for j in range(cols):
+#                 if j == 0 or j == (cols - 1):
+#                     print("*", end="")
+#                 else:
+#                     print(" ", end="")
+#         print("")
+# else:
+#     print("Informacion invalida")
+
+# (5)
+d = dict({})
+initial = 0
+num = 7820
+cont = 1
+print("{:5d}".format(num), end="")
+while cont <= num:
+    if (num % cont) == 0:
+        # Verify if is a prime number.
+        divisorsNumber = 0
+        primeCounter = 1
+        while primeCounter <= cont:
+            if (cont % primeCounter) == 0:
+                divisorsNumber = divisorsNumber + 1
+            primeCounter += 1
+        if divisorsNumber == 2:
+            primeNumber = cont
+            if primeNumber in d.keys():
+                d[primeNumber] += 1
+            else:
+                d[primeNumber] = 1
+            print("|{:2d}".format(primeNumber))
+            num = int(num / primeNumber)
+            print("{:5d}".format(num), end="")
+            cont = 0
+    cont += 1
+print("\n")
+
+print(d)
