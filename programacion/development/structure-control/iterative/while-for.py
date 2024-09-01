@@ -113,6 +113,7 @@ while cont <= num:
     cont += 1
 print("\n")
 
+# Show results
 i = 0
 print("{} = ".format(n1), end="")
 for c, v in d.items():
