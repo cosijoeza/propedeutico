@@ -87,7 +87,8 @@ import random
 # (5)
 d = dict({})
 initial = 0
-num = 7820
+num = 220
+n1 = num
 cont = 1
 print("{:5d}".format(num), end="")
 while cont <= num:
@@ -112,4 +113,11 @@ while cont <= num:
     cont += 1
 print("\n")
 
-print(d)
+i = 0
+print("{} = ".format(n1), end="")
+for c, v in d.items():
+    print("{:d}^{:}".format(c, v), end="")
+    if i != (len(d) - 1):
+        print("*", end="")
+    i += 1
+print("")
