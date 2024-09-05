@@ -1,11 +1,11 @@
-import random
-
 # (1)
 n = 5
 for i in range(n):
     for j in range(n):
         print("*",end="")
-    print("\n")
+    print("")
+print("\n")
+
 # (2)
 words = [
     "universidad tecnologica de la mixteca",
