@@ -65,9 +65,9 @@ afternoon = np.random.normal(loc=5, scale=1, size=n)
 night = np.random.normal(loc=5, scale=1, size=n)
 
 data = {"Morning": morning, "Afternoon": afternoon, "Night": night}
-
 df = pd.DataFrame(data=data)
 print(df)
+
 print(
     "Mean-Morning: {:.4f}\nMean-Afternoon {:.4f}\nMean-Nignt {:.4f}".format(
         df["Morning"].mean(), df["Afternoon"].mean(), df["Night"].mean()
