@@ -1,3 +1,6 @@
+print("\t\t=========== SQUARE MAGIC =============")
+
+
 def isMagic(matrix):
     rowsNumber = len(matrix)
     colsNumber = len(matrix[0])
@@ -55,7 +58,19 @@ m = [[6, 1, 8], [7, 5, 3], [2, 9, 1]]
 m = [[4, 3, 8], [9, 5, 4], [2, 7, 6]]
 m = [[2, 9, 6], [9, 5, 1], [4, 3, 8]]
 m = [[2, 9, 5], [7, 5, 3], [6, 1, 8]]
-print(isMagic(m))
+
+# Read data.
+m = []
+for i in range(3):
+    n = list()
+    for j in range(3):
+        n.append(int(input("Dame el dato M[{}][{}]: ".format(i, j))))
+    m.append(n)
+print("\nm = ", m)
+print("Is m magic?: ", isMagic(m))
+print("\n")
+
+print("\t\t=========== TRANSPOSED =============")
 
 
 def transposed(matrix):
@@ -64,10 +79,17 @@ def transposed(matrix):
 
     for j in range(numberCols):
         for i in range(numberRows):
-            print(matrix[i][j], " ", end="")
+            print("{:5}".format(matrix[i][j]), end="")
         print("")
 
 
-m = [[8, 1, 6], [3, 5, 7], [4, 9, 2]]
-print(m)
+# Read data.
+m = []
+for i in range(3):
+    n = list()
+    for j in range(3):
+        n.append(int(input("Dame el dato M[{}][{}]: ".format(i, j))))
+    m.append(n)
+print("\nm = ", m)
+print("m^T = ")
 transposed(m)
